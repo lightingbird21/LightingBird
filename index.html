@@ -1,0 +1,243 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>LightingBird — la console lumière pour Mac et Windows</title>
+<meta name="description" content="LightingBird, une console lumière gratuite pour Mac et Windows : conduite, devices, effets, son et vidéo.">
+<link rel="icon" href="img/logo.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Space+Grotesk:wght@500;600;700&amp;family=JetBrains+Mono:wght@500;700&amp;display=swap">
+<style>
+body{margin:0;background:#1c1e22}
+a{color:#f5b342;text-decoration:none}a:hover{color:#ffd27a}
+</style>
+</head>
+<body>
+<div style="background: #1c1e22; color: #edeef2; font-family: Inter, system-ui, sans-serif; font-size: 16px; line-height: 1.55; min-height: 100vh">
+
+<header style="position: sticky; top: 0; z-index: 10; background: rgba(28,30,34,0.9); backdrop-filter: blur(10px); border-bottom: 1px solid #30333a">
+<nav style="max-width: 1200px; margin: 0 auto; padding: 12px 24px; display: flex; flex-wrap: wrap; align-items: center; gap: 12px 28px">
+<a href="#accueil" style="display: flex; align-items: center; gap: 14px; color: #edeef2">
+<img src="img/logo.svg" alt="" style="width: 52px; height: 52px; display: block; border-radius: 50%; box-shadow: 0 0 0 2px #f5b342, 0 0 22px rgba(245,179,66,0.28)">
+<span style="font-family: 'Space Grotesk', sans-serif; font-weight: 700; font-size: 22px; letter-spacing: 0.2px">Lighting<span style="color: #1f9fc4; font-weight: 400">Bird</span></span>
+</a>
+<div style="display: flex; flex-wrap: wrap; gap: 6px 22px; flex: 1 1 auto; font-size: 14px">
+<a href="#fonctions" style="color: #b9bdc7">Fonctions</a>
+<a href="#bestiaire" style="color: #b9bdc7">Bestiaire</a>
+<a href="#apercu" style="color: #b9bdc7">Aperçu</a>
+<a href="#installer" style="color: #b9bdc7">Télécharger</a>
+<a href="#merci" style="color: #b9bdc7">Contact</a>
+</div>
+</nav>
+</header>
+
+<section id="accueil" style="max-width: 1200px; margin: 0 auto; padding: 88px 24px 40px; display: flex; flex-direction: column; align-items: center; text-align: center; gap: 22px">
+<span style="display: inline-flex; align-items: center; gap: 10px; padding: 9px 20px; border: 1px solid #474c57; border-radius: 999px; font-size: 16px; color: #d6d9e0; letter-spacing: 0.2px"><span style="width: 10px; height: 10px; border-radius: 50%; background: #f5b342; display: inline-block"></span>bêta 0.1 · gratuite</span>
+<h1 style="margin: 0; font-family: 'Space Grotesk', sans-serif; font-weight: 700; font-size: clamp(48px, 8vw, 104px); line-height: 1; letter-spacing: -2px">Lighting<span style="color: #1f9fc4; font-weight: 400">Bird</span></h1>
+<p style="margin: 0; max-width: 680px; font-size: clamp(20px, 2.2vw, 26px); color: #d6d9e0">Console lumière en migration.</p>
+<div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 14px; margin-top: 8px">
+<a href="#installer" style="display: inline-flex; align-items: center; gap: 14px; min-height: 64px; padding: 10px 28px 10px 22px; border-radius: 16px; background: #f5b342; color: #14110a; text-align: left">
+<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12"></path><path d="M7 10l5 5 5-5"></path><path d="M5 21h14"></path></svg>
+<span style="display: flex; flex-direction: column; gap: 3px"><span style="font-weight: 600; font-size: 17px; line-height: 1.1">Télécharger pour macOS</span><span style="font-size: 12.5px; line-height: 1.2; color: #4a3a12">puce Apple et Intel · macOS 11 Big Sur ou plus</span></span>
+</a>
+<a href="#installer" style="display: inline-flex; align-items: center; gap: 14px; min-height: 64px; padding: 10px 28px 10px 22px; border-radius: 16px; border: 1px solid #f5b342; color: #ffd27a; text-align: left">
+<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="8" height="8" rx="1"></rect><rect x="13" y="3" width="8" height="8" rx="1"></rect><rect x="3" y="13" width="8" height="8" rx="1"></rect><rect x="13" y="13" width="8" height="8" rx="1"></rect></svg>
+<span style="display: flex; flex-direction: column; gap: 3px"><span style="font-weight: 600; font-size: 17px; line-height: 1.1; color: #edeef2">Télécharger pour Windows</span><span style="font-size: 12.5px; line-height: 1.2; color: #b9bdc7">Windows 10 ou plus</span></span>
+</a>
+</div>
+</section>
+
+<section style="max-width: 1240px; margin: 0 auto; padding: 24px 24px 96px">
+<div style="border: 1px solid #383c45; border-radius: 14px; overflow: hidden; background: #25282e; box-shadow: 0 40px 120px rgba(245,179,66,0.10), 0 20px 60px rgba(0,0,0,0.6)">
+<div style="display: flex; align-items: center; gap: 8px; padding: 10px 14px; border-bottom: 1px solid #30333a">
+<span style="width: 11px; height: 11px; border-radius: 50%; background: #4a4e58; display: inline-block"></span>
+<span style="width: 11px; height: 11px; border-radius: 50%; background: #4a4e58; display: inline-block"></span>
+<span style="width: 11px; height: 11px; border-radius: 50%; background: #4a4e58; display: inline-block"></span>
+</div>
+<img src="img/console6.jpg" alt="La console LightingBird pendant un GO : grille des circuits, playback A/B, faders, et LORIKEET dans NEST qui suit le changement de couleur" style="display: block; width: 100%; height: auto">
+</div>
+</section>
+
+<section id="fonctions" style="max-width: 1200px; margin: 0 auto; padding: 40px 24px 96px">
+<p style="margin: 0 0 24px; font-family: 'JetBrains Mono', monospace; font-size: 13px; letter-spacing: 2px; color: #f5b342">FONCTIONS</p>
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 14px">
+<div style="padding: 22px 24px; border: 1px solid #33373f; border-radius: 12px; background: #25282e">
+<h3 style="margin: 0 0 8px; font-family: 'Space Grotesk', sans-serif; font-size: 18px; font-weight: 600">La conduite</h3>
+<p style="margin: 0; color: #a7acb7; font-size: 14.5px; line-height: 1.55">Cues avec temps IN / OUT, DELAY, WAIT et FOLLOW. 512 circuits, numérotés librement de 1 à 2000, plusieurs cue lists, groupes et subs. UPDATE en cue only, UPDATE TRACK au choix.</p>
+</div>
+<div style="padding: 22px 24px; border: 1px solid #33373f; border-radius: 12px; background: #25282e">
+<h3 style="margin: 0 0 8px; font-family: 'Space Grotesk', sans-serif; font-size: 18px; font-weight: 600">Les devices</h3>
+<p style="margin: 0; color: #a7acb7; font-size: 14.5px; line-height: 1.55">Éditeur de devices. Import GDTF, Open Fixture Library et XML.</p>
+</div>
+<div style="padding: 22px 24px; border: 1px solid #33373f; border-radius: 12px; background: #25282e">
+<h3 style="margin: 0 0 8px; font-family: 'Space Grotesk', sans-serif; font-size: 18px; font-weight: 600">L'encodage</h3>
+<p style="margin: 0; color: #a7acb7; font-size: 14.5px; line-height: 1.55">Intensité, focus, couleur et beam aux encodeurs. Palettes. Gestion des transferts de couleur à vue. Nuancier LEE, Rosco, GAM et E-Colour+.</p>
+</div>
+<div style="padding: 22px 24px; border: 1px solid #33373f; border-radius: 12px; background: #25282e">
+<h3 style="margin: 0 0 8px; font-family: 'Space Grotesk', sans-serif; font-size: 18px; font-weight: 600">Les effets</h3>
+<p style="margin: 0; color: #a7acb7; font-size: 14.5px; line-height: 1.55">Pas à pas, effets intégrés (cercle, cancan…) et assistant QUICK. Chargés dans les faders.</p>
+</div>
+<div style="padding: 22px 24px; border: 1px solid #33373f; border-radius: 12px; background: #25282e">
+<h3 style="margin: 0 0 8px; font-family: 'Space Grotesk', sans-serif; font-size: 18px; font-weight: 600">Les sorties</h3>
+<p style="margin: 0; color: #a7acb7; font-size: 14.5px; line-height: 1.55">Interfaces USB DMX type DMX USB PRO (pas les Open DMX ni les mini-boîtiers sans processeur). Art-Net et sACN, jusqu'à 8 univers. Compatible avec le visualiseur Capture, en sACN.</p>
+</div>
+<div style="padding: 22px 24px; border: 1px solid #33373f; border-radius: 12px; background: #25282e">
+<h3 style="margin: 0 0 8px; font-family: 'Space Grotesk', sans-serif; font-size: 18px; font-weight: 600">Le son et la vidéo</h3>
+<p style="margin: 0; color: #a7acb7; font-size: 14.5px; line-height: 1.55">SOUNDBIRD et VIDEOBIRD : son et vidéo dans la conduite, calés sur les cues, ou dans des faders avec GO. Timecode MIDI (MTC) reçu ou envoyé.</p>
+</div>
+<div style="padding: 22px 24px; border: 1px solid #33373f; border-radius: 12px; background: #25282e">
+<h3 style="margin: 0 0 8px; font-family: 'Space Grotesk', sans-serif; font-size: 18px; font-weight: 600">Les fichiers</h3>
+<p style="margin: 0; color: #a7acb7; font-size: 14.5px; line-height: 1.55">Import et export ASCII (Congo, D-Light, Eos). Impression en PDF. Sauvegarde automatique et reprise après plantage.</p>
+</div>
+<div style="padding: 22px 24px; border: 1px solid #33373f; border-radius: 12px; background: #25282e">
+<h3 style="margin: 0 0 8px; font-family: 'Space Grotesk', sans-serif; font-size: 18px; font-weight: 600">Le pilotage</h3>
+<p style="margin: 0; color: #a7acb7; font-size: 14.5px; line-height: 1.55">Télécommande sur téléphone ou tablette (iPhone, Android…), dans le navigateur, rien à installer. Contrôleurs MIDI en USB (nanoKONTROL, BCF2000, X-Touch…) et OSC. Deuxième écran.</p>
+</div>
+</div>
+</section>
+
+<section id="apercu" style="max-width: 1200px; margin: 0 auto; padding: 40px 24px 40px">
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(460px, 100%), 1fr)); gap: 48px 32px; align-items: start">
+<figure style="margin: 0; min-width: 0">
+<p style="margin: 0 0 10px; font-family: 'JetBrains Mono', monospace; font-size: 13px; letter-spacing: 2px; color: #f5b342">GÉLATINES</p>
+<button type="button" data-zoom="gel" aria-label="Agrandir : Le nuancier de gélatines LEE, Rosco, GAM et E-Colour+" style="display: block; width: 100%; padding: 0; border: 0; background: none; cursor: zoom-in">
+<img src="img/gelatines.jpg" alt="Le nuancier de gélatines LEE, Rosco, GAM et E-Colour+" loading="lazy" decoding="async" style="display: block; width: 100%; height: auto; border-radius: 12px; border: 1px solid #383c45">
+</button>
+</figure>
+<figure style="margin: 0; min-width: 0">
+<p style="margin: 0 0 10px; font-family: 'JetBrains Mono', monospace; font-size: 13px; letter-spacing: 2px; color: #f5b342">STARLING</p>
+<button type="button" data-zoom="star" aria-label="Agrandir : STARLING : chemin d'un fondu de couleur" style="display: block; width: 100%; padding: 0; border: 0; background: none; cursor: zoom-in">
+<img src="img/starling.jpg" alt="STARLING : chemin d'un fondu de couleur" loading="lazy" decoding="async" style="display: block; width: 100%; height: auto; border-radius: 12px; border: 1px solid #383c45">
+</button>
+</figure>
+<figure style="margin: 0; min-width: 0; grid-column: 1 / -1">
+<p style="margin: 0 0 10px; font-family: 'JetBrains Mono', monospace; font-size: 13px; letter-spacing: 2px; color: #f5b342">FOCUS</p>
+<button type="button" data-zoom="focus" aria-label="Agrandir : BLACKBIRD : pan et tilt de six lyres" style="display: block; width: 100%; padding: 0; border: 0; background: none; cursor: zoom-in">
+<img src="img/focus2.jpg" alt="BLACKBIRD : pan et tilt de six lyres" loading="lazy" decoding="async" style="display: block; width: 100%; height: auto; border-radius: 12px; border: 1px solid #383c45">
+</button>
+</figure>
+<figure style="margin: 0; min-width: 0">
+<p style="margin: 0 0 10px; font-family: 'JetBrains Mono', monospace; font-size: 13px; letter-spacing: 2px; color: #f5b342">PATCH</p>
+<button type="button" data-zoom="patch" aria-label="Agrandir : Le patch : circuits, adresses et univers" style="display: block; width: 100%; padding: 0; border: 0; background: none; cursor: zoom-in">
+<img src="img/patch2.jpg" alt="Le patch : circuits, adresses et univers" loading="lazy" decoding="async" style="display: block; width: 100%; height: auto; border-radius: 12px; border: 1px solid #383c45">
+</button>
+</figure>
+<figure style="margin: 0; min-width: 0">
+<p style="margin: 0 0 10px; font-family: 'JetBrains Mono', monospace; font-size: 13px; letter-spacing: 2px; color: #f5b342">DEVICES</p>
+<button type="button" data-zoom="dev" aria-label="Agrandir : L'éditeur de devices" style="display: block; width: 100%; padding: 0; border: 0; background: none; cursor: zoom-in">
+<img src="img/devices.jpg" alt="L'éditeur de devices" loading="lazy" decoding="async" style="display: block; width: 100%; height: auto; border-radius: 12px; border: 1px solid #383c45">
+</button>
+</figure>
+<figure style="margin: 0; min-width: 0; grid-column: 1 / -1">
+<p style="margin: 0 0 10px; font-family: 'JetBrains Mono', monospace; font-size: 13px; letter-spacing: 2px; color: #f5b342">BLIND</p>
+<button type="button" data-zoom="blind" aria-label="Agrandir : BLIND : la cue list en édition" style="display: block; width: 100%; padding: 0; border: 0; background: none; cursor: zoom-in">
+<img src="img/blind.jpg" alt="BLIND : la cue list en édition" loading="lazy" decoding="async" style="display: block; width: 100%; height: auto; border-radius: 12px; border: 1px solid #383c45">
+</button>
+</figure>
+<figure style="margin: 0; min-width: 0; grid-column: 1 / -1">
+<p style="margin: 0 0 10px; font-family: 'JetBrains Mono', monospace; font-size: 13px; letter-spacing: 2px; color: #f5b342">SOUNDBIRD</p>
+<button type="button" data-zoom="snd" aria-label="Agrandir : SOUNDBIRD : la grille de sons, les entrées micro et la colonne SOUND" style="display: block; width: 100%; padding: 0; border: 0; background: none; cursor: zoom-in">
+<img src="img/soundbird_entrees.jpg" alt="SOUNDBIRD : la grille de sons, les entrées micro et la colonne SOUND" loading="lazy" decoding="async" style="display: block; width: 100%; height: auto; border-radius: 12px; border: 1px solid #383c45">
+</button>
+</figure>
+<figure style="margin: 0; min-width: 0">
+<p style="margin: 0 0 10px; font-family: 'JetBrains Mono', monospace; font-size: 13px; letter-spacing: 2px; color: #f5b342">ÉDITEUR DE SON</p>
+<button type="button" data-zoom="sed" aria-label="Agrandir : L'éditeur de son : forme d'onde et courbe de volume" style="display: block; width: 100%; padding: 0; border: 0; background: none; cursor: zoom-in">
+<img src="img/soundbird_ed.jpg" alt="L'éditeur de son : forme d'onde et courbe de volume" loading="lazy" decoding="async" style="display: block; width: 100%; height: auto; border-radius: 12px; border: 1px solid #383c45">
+</button>
+</figure>
+<figure style="margin: 0; min-width: 0">
+<p style="margin: 0 0 10px; font-family: 'JetBrains Mono', monospace; font-size: 13px; letter-spacing: 2px; color: #f5b342">MAPPING</p>
+<button type="button" data-zoom="map" aria-label="Agrandir : Le mapping vidéo" style="display: block; width: 100%; padding: 0; border: 0; background: none; cursor: zoom-in">
+<img src="img/mapping.jpg" alt="Le mapping vidéo" loading="lazy" decoding="async" style="display: block; width: 100%; height: auto; border-radius: 12px; border: 1px solid #383c45">
+</button>
+</figure>
+<figure style="margin: 0; min-width: 0; grid-column: 1 / -1">
+<p style="margin: 0 0 10px; font-family: 'JetBrains Mono', monospace; font-size: 13px; letter-spacing: 2px; color: #f5b342">VIDEOBIRD</p>
+<button type="button" data-zoom="vid" aria-label="Agrandir : VIDEOBIRD : les calques vidéo et la colonne VIDEO" style="display: block; width: 100%; padding: 0; border: 0; background: none; cursor: zoom-in">
+<img src="img/videobird.jpg" alt="VIDEOBIRD : les calques vidéo et la colonne VIDEO" loading="lazy" decoding="async" style="display: block; width: 100%; height: auto; border-radius: 12px; border: 1px solid #383c45">
+</button>
+</figure>
+</div>
+
+<button type="button" id="lbBox" hidden aria-label="Fermer l'image agrandie" style="position: fixed; inset: 0; z-index: 50; display: none; align-items: center; justify-content: center; padding: 24px; border: 0; background: rgba(12,13,15,0.94); cursor: zoom-out">
+<img id="lbImg" src="" alt="" style="display: block; max-width: 100%; max-height: 100%; border-radius: 10px; box-shadow: 0 30px 90px rgba(0,0,0,0.6)">
+</button>
+</section>
+
+<section id="bestiaire" style="max-width: 1200px; margin: 0 auto; padding: 96px 24px">
+<p style="margin: 0 0 10px; font-family: 'JetBrains Mono', monospace; font-size: 13px; letter-spacing: 2px; color: #f5b342">LE BESTIAIRE</p>
+<h2 style="margin: 0 0 12px; font-family: 'Space Grotesk', sans-serif; font-weight: 600; font-size: clamp(30px, 3.6vw, 44px); line-height: 1.1; letter-spacing: -0.6px; max-width: 760px">Les mots du métier restent. Les idées maison ont des ailes.</h2>
+<p style="margin: 0 0 40px; color: #a7acb7; max-width: 680px">GO, REC, UPDATE, THRU gardent leur nom : vous êtes chez vous. Certaines fonctions portent un nom d'oiseau, court et impossible à confondre dans le noir.</p>
+<div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); gap: 12px">
+<div style="padding: 20px; border: 1px solid #33373f; border-radius: 12px; background: #25282e; display: flex; flex-direction: column; gap: 6px"><div style="display: flex; justify-content: space-between; align-items: baseline; gap: 10px"><b style="font-family: 'JetBrains Mono', monospace; font-size: 15px; color: #ffd27a">MAGPIE</b><span style="font-size: 12px; color: #8e94a1">pie · Highlight</span></div><p style="margin: 0; font-size: 14px; color: #a7acb7">Un projecteur de la sélection en évidence, les autres en retrait.</p></div>
+<div style="padding: 20px; border: 1px solid #33373f; border-radius: 12px; background: #25282e; display: flex; flex-direction: column; gap: 6px"><div style="display: flex; justify-content: space-between; align-items: baseline; gap: 10px"><b style="font-family: 'JetBrains Mono', monospace; font-size: 15px; color: #ffd27a">PEACOCK</b><span style="font-size: 12px; color: #8e94a1">paon · Fan</span></div><p style="margin: 0; font-size: 14px; color: #a7acb7">L'éventail en direct sur l'intensité, le pan, le tilt ou la couleur.</p></div>
+<div style="padding: 20px; border: 1px solid #33373f; border-radius: 12px; background: #25282e; display: flex; flex-direction: column; gap: 6px"><div style="display: flex; justify-content: space-between; align-items: baseline; gap: 10px"><b style="font-family: 'JetBrains Mono', monospace; font-size: 15px; color: #ffd27a">LARK</b><span style="font-size: 12px; color: #8e94a1">alouette · Sneak</span></div><p style="margin: 0; font-size: 14px; color: #a7acb7">Relâche les valeurs manuelles, tout ou famille par famille.</p></div>
+<div style="padding: 20px; border: 1px solid #33373f; border-radius: 12px; background: #25282e; display: flex; flex-direction: column; gap: 6px"><div style="display: flex; justify-content: space-between; align-items: baseline; gap: 10px"><b style="font-family: 'JetBrains Mono', monospace; font-size: 15px; color: #ffd27a">STORK</b><span style="font-size: 12px; color: #8e94a1">cigogne · Home</span></div><p style="margin: 0; font-size: 14px; color: #a7acb7">Les paramètres de la sélection reviennent à leur origine.</p></div>
+<div style="padding: 20px; border: 1px solid #33373f; border-radius: 12px; background: #25282e; display: flex; flex-direction: column; gap: 6px"><div style="display: flex; justify-content: space-between; align-items: baseline; gap: 10px"><b style="font-family: 'JetBrains Mono', monospace; font-size: 15px; color: #ffd27a">OWL</b><span style="font-size: 12px; color: #8e94a1">hibou · Mark</span></div><p style="margin: 0; font-size: 14px; color: #a7acb7">Un projecteur éteint se place avant sa cue, sans être vu.</p></div>
+<div style="padding: 20px; border: 1px solid #33373f; border-radius: 12px; background: #25282e; display: flex; flex-direction: column; gap: 6px"><div style="display: flex; justify-content: space-between; align-items: baseline; gap: 10px"><b style="font-family: 'JetBrains Mono', monospace; font-size: 15px; color: #ffd27a">CUCKOO</b><span style="font-size: 12px; color: #8e94a1">coucou</span></div><p style="margin: 0; font-size: 14px; color: #a7acb7">Ne garde que les circuits donnés, tous les autres partent à zéro.</p></div>
+<div style="padding: 20px; border: 1px solid #33373f; border-radius: 12px; background: #25282e; display: flex; flex-direction: column; gap: 6px"><div style="display: flex; justify-content: space-between; align-items: baseline; gap: 10px"><b style="font-family: 'JetBrains Mono', monospace; font-size: 15px; color: #ffd27a">HUNT</b><span style="font-size: 12px; color: #8e94a1">chasse · Track</span></div><p style="margin: 0; font-size: 14px; color: #a7acb7">Retrouve un circuit ou une palette : son niveau cue par cue et où il sert.</p></div>
+<div style="padding: 20px; border: 1px solid #33373f; border-radius: 12px; background: #25282e; display: flex; flex-direction: column; gap: 6px"><div style="display: flex; justify-content: space-between; align-items: baseline; gap: 10px"><b style="font-family: 'JetBrains Mono', monospace; font-size: 15px; color: #ffd27a">DODO</b><span style="font-size: 12px; color: #8e94a1">dodo · Park</span></div><p style="margin: 0; font-size: 14px; color: #a7acb7">Un circuit capturé à zéro dans toutes les cues, jusqu'à ce qu'on le libère.</p></div>
+<div style="padding: 20px; border: 1px solid #33373f; border-radius: 12px; background: #25282e; display: flex; flex-direction: column; gap: 6px"><div style="display: flex; justify-content: space-between; align-items: baseline; gap: 10px"><b style="font-family: 'JetBrains Mono', monospace; font-size: 15px; color: #ffd27a">PHOENIX</b><span style="font-size: 12px; color: #8e94a1">phénix · Undo</span></div><p style="margin: 0; font-size: 14px; color: #a7acb7">L'historique de la programmation, retour en arrière avec confirmation.</p></div>
+<div style="padding: 20px; border: 1px solid #33373f; border-radius: 12px; background: #25282e; display: flex; flex-direction: column; gap: 6px"><div style="display: flex; justify-content: space-between; align-items: baseline; gap: 10px"><b style="font-family: 'JetBrains Mono', monospace; font-size: 15px; color: #ffd27a">STARLING</b><span style="font-size: 12px; color: #8e94a1">étourneau</span></div><p style="margin: 0; font-size: 14px; color: #a7acb7">Le chemin d'un fondu de couleur : par le blanc, par le noir, tour de roue.</p></div>
+<div style="padding: 20px; border: 1px dashed #4a4e58; border-radius: 12px; background: transparent; display: flex; flex-direction: column; gap: 6px"><div style="display: flex; justify-content: space-between; align-items: baseline; gap: 10px"><b style="font-family: 'JetBrains Mono', monospace; font-size: 15px; color: #ffd27a">SWALLOW</b><span style="font-size: 12px; color: #8e94a1">hirondelle · bientôt</span></div><p style="margin: 0; font-size: 14px; color: #a7acb7">Le chemin d'un fondu de position : par où passent le pan et le tilt.</p></div>
+<div style="padding: 20px; border: 1px solid #33373f; border-radius: 12px; background: #25282e; display: flex; flex-direction: column; gap: 6px"><div style="display: flex; justify-content: space-between; align-items: baseline; gap: 10px"><b style="font-family: 'JetBrains Mono', monospace; font-size: 15px; color: #ffd27a">BLACKBIRD</b><span style="font-size: 12px; color: #8e94a1">merle · encodeurs</span></div><p style="margin: 0; font-size: 14px; color: #a7acb7">Un potard par paramètre, des boutons pour les roues et les macros.</p></div>
+<div style="padding: 20px; border: 1px solid #33373f; border-radius: 12px; background: #25282e; display: flex; flex-direction: column; gap: 6px"><div style="display: flex; justify-content: space-between; align-items: baseline; gap: 10px"><b style="font-family: 'JetBrains Mono', monospace; font-size: 15px; color: #ffd27a">NEST</b><span style="font-size: 12px; color: #8e94a1">nid · Direct Selects</span></div><p style="margin: 0; font-size: 14px; color: #a7acb7">Groupes, palettes et effets en touches directes.</p></div>
+<div style="padding: 20px; border: 1px solid #33373f; border-radius: 12px; background: #25282e; display: flex; flex-direction: column; gap: 6px"><div style="display: flex; justify-content: space-between; align-items: baseline; gap: 10px"><b style="font-family: 'JetBrains Mono', monospace; font-size: 15px; color: #ffd27a">LORIKEET</b><span style="font-size: 12px; color: #8e94a1">loriquet · Color Picker</span></div><p style="margin: 0; font-size: 14px; color: #a7acb7">Le sélecteur de couleur, avec le nuancier de gélatines.</p></div>
+<div style="padding: 20px; border: 1px solid #33373f; border-radius: 12px; background: #25282e; display: flex; flex-direction: column; gap: 6px"><div style="display: flex; justify-content: space-between; align-items: baseline; gap: 10px"><b style="font-family: 'JetBrains Mono', monospace; font-size: 15px; color: #ffd27a">REDKITE · BAT</b><span style="font-size: 12px; color: #8e94a1">milan · chauve-souris</span></div><p style="margin: 0; font-size: 14px; color: #a7acb7">Tous les faders à zéro, ou leur sortie coupée sans bouger les curseurs.</p></div>
+</div>
+</section>
+
+<section id="installer" style="max-width: 1200px; margin: 0 auto; padding: 96px 24px">
+<div style="border: 1px solid #3b3f48; border-radius: 18px; background: #25282e; padding: clamp(28px, 5vw, 56px); display: flex; flex-wrap: wrap; gap: 40px 56px">
+<div style="flex: 1 1 340px; min-width: 0; display: flex; flex-direction: column; gap: 18px; align-items: flex-start">
+<p style="margin: 0; font-family: 'JetBrains Mono', monospace; font-size: 13px; letter-spacing: 2px; color: #f5b342">TÉLÉCHARGER</p>
+<a href="https://github.com/lightingbird21/lightingbird/releases/latest/download/LightingBird-Mac.dmg" style="display: inline-flex; align-items: center; gap: 10px; min-height: 52px; padding: 0 26px; border-radius: 999px; background: #f5b342; color: #14110a; font-weight: 600; font-size: 16px">
+<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12"></path><path d="M7 10l5 5 5-5"></path><path d="M5 21h14"></path></svg>
+Télécharger LightingBird pour Mac
+</a>
+<p style="margin: 0; font-size: 14px; color: #8e94a1">Bêta 0.1 · fichier .dmg · macOS 11 Big Sur ou plus · puce Apple et Intel</p>
+<a href="https://github.com/lightingbird21/lightingbird/releases/latest/download/LightingBird-Windows.exe" style="display: inline-flex; align-items: center; gap: 10px; min-height: 52px; padding: 0 26px; border-radius: 999px; border: 1px solid #f5b342; color: #ffd27a; font-weight: 600; font-size: 16px; margin-top: 10px">
+<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12"></path><path d="M7 10l5 5 5-5"></path><path d="M5 21h14"></path></svg>
+Télécharger LightingBird pour Windows
+</a>
+<p style="margin: 0; font-size: 14px; color: #8e94a1">Bêta 0.1 · fichier .exe · Windows 10 ou plus</p>
+<p style="margin: 0; font-size: 14px; color: #a7acb7">Sur Windows : lancez le .exe. Si Windows affiche « Windows a protégé votre ordinateur », cliquez Informations complémentaires, puis Exécuter quand même.</p>
+</div>
+<ol style="flex: 1 1 420px; min-width: 0; margin: 0; padding: 0; list-style: none; display: flex; flex-direction: column; gap: 14px">
+<li style="display: flex; gap: 16px; align-items: flex-start"><span style="flex: none; width: 34px; height: 34px; border-radius: 50%; border: 1px solid #f5b342; color: #f5b342; display: flex; align-items: center; justify-content: center; font-family: 'JetBrains Mono', monospace; font-weight: 700; font-size: 14px">1</span><div><b style="font-weight: 600">Sur Mac, ouvrez le .dmg</b><p style="margin: 2px 0 0; color: #a7acb7; font-size: 15px">et glissez LightingBird dans le dossier Applications.</p></div></li>
+<li style="display: flex; gap: 16px; align-items: flex-start"><span style="flex: none; width: 34px; height: 34px; border-radius: 50%; border: 1px solid #f5b342; color: #f5b342; display: flex; align-items: center; justify-content: center; font-family: 'JetBrains Mono', monospace; font-weight: 700; font-size: 14px">2</span><div><b style="font-weight: 600">Lancez-la une première fois</b><p style="margin: 2px 0 0; color: #a7acb7; font-size: 15px">macOS prévient que l'app ne vient pas de l'App Store : c'est normal, LightingBird est distribuée en direct.</p></div></li>
+<li style="display: flex; gap: 16px; align-items: flex-start"><span style="flex: none; width: 34px; height: 34px; border-radius: 50%; border: 1px solid #f5b342; color: #f5b342; display: flex; align-items: center; justify-content: center; font-family: 'JetBrains Mono', monospace; font-weight: 700; font-size: 14px">3</span><div><b style="font-weight: 600">Autorisez-la</b><p style="margin: 2px 0 0; color: #a7acb7; font-size: 15px">Réglages Système › Confidentialité et sécurité › Ouvrir quand même. Une seule fois : ensuite elle s'ouvre normalement.</p></div></li>
+<li style="display: flex; gap: 16px; align-items: flex-start"><span style="flex: none; width: 34px; height: 34px; border-radius: 50%; border: 1px solid #f5b342; color: #f5b342; display: flex; align-items: center; justify-content: center; font-family: 'JetBrains Mono', monospace; font-weight: 700; font-size: 14px">4</span><div><b style="font-weight: 600">Branchez votre interface</b><p style="margin: 2px 0 0; color: #a7acb7; font-size: 15px">USB DMX ou boîtier Art-Net / sACN : tout est expliqué dans le <a href="https://github.com/lightingbird21/lightingbird/releases/latest/download/Manuel-LightingBird.pdf">manuel</a>.</p></div></li>
+</ol>
+</div>
+</section>
+
+<section id="merci" style="max-width: 820px; margin: 0 auto; padding: 56px 24px 112px; text-align: center; display: flex; flex-direction: column; align-items: center; gap: 18px">
+<img src="img/logo.svg" alt="Le logo LightingBird : une pie qui tient une ampoule dans son bec" style="width: 88px; height: 88px">
+<h2 style="margin: 0; font-family: 'Space Grotesk', sans-serif; font-weight: 600; font-size: clamp(28px, 3.4vw, 40px); line-height: 1.15; letter-spacing: -0.5px">Si la pie vous chante, dites-le-moi.</h2>
+<p style="margin: 0; color: #a7acb7; font-size: 17px">LightingBird est gratuite et le restera. Il n'y a ni compte ni compteur : la seule façon de savoir qu'elle tourne dans votre régie, c'est votre petit mot. Un bug, une idée, un simple merci : tout est bienvenu.</p>
+<a href="mailto:contact@lightingbird.fr" style="display: inline-flex; align-items: center; gap: 10px; min-height: 48px; padding: 0 24px; border-radius: 999px; border: 1px solid #f5b342; color: #ffd27a; font-family: 'JetBrains Mono', monospace; font-weight: 500; font-size: 15px">
+<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"></rect><path d="M3 7l9 6 9-6"></path></svg>
+contact@lightingbird.fr
+</a>
+</section>
+
+<footer style="border-top: 1px solid #30333a">
+<div style="max-width: 1200px; margin: 0 auto; padding: 26px 24px; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 12px 24px; font-size: 13px; color: #8e94a1">
+<span>© 2026 LightingBird · lightingbird.fr</span>
+<span>Aucun cookie, aucun compte, aucune statistique.</span>
+<a href="https://github.com/lightingbird21/lightingbird/releases/latest/download/Manuel-LightingBird.pdf" style="color: #b9bdc7">Le manuel</a>
+</div>
+</footer>
+
+</div>
+<script>
+(function(){var P={"gel": ["img/gelatines.jpg", "Le nuancier de gélatines LEE, Rosco, GAM et E-Colour+"], "star": ["img/starling.jpg", "STARLING : chemin d'un fondu de couleur"], "focus": ["img/focus2.jpg", "BLACKBIRD : pan et tilt de six lyres"], "blind": ["img/blind.jpg", "BLIND : la cue list en édition"], "patch": ["img/patch2.jpg", "Le patch : circuits, adresses et univers"], "dev": ["img/devices.jpg", "L'éditeur de devices"], "snd": ["img/soundbird_entrees.jpg", "SOUNDBIRD : la grille de sons, les entrées micro et la colonne SOUND"], "sed": ["img/soundbird_ed.jpg", "L'éditeur de son : forme d'onde et courbe de volume"], "map": ["img/mapping.jpg", "Le mapping vidéo"], "vid": ["img/videobird.jpg", "VIDEOBIRD : les calques vidéo et la colonne VIDEO"]},box=document.getElementById('lbBox'),img=document.getElementById('lbImg');
+function close(){box.hidden=true;box.style.display='none';img.src='';}
+document.addEventListener('click',function(e){var b=e.target.closest('[data-zoom]');if(b){var p=P[b.getAttribute('data-zoom')];if(!p)return;img.src=p[0];img.alt=p[1];box.hidden=false;box.style.display='flex';return;}if(e.target.closest('#lbBox'))close();});
+document.addEventListener('keydown',function(e){if(e.key==='Escape'&&!box.hidden)close();});})();
+</script>
+</body>
+</html>
